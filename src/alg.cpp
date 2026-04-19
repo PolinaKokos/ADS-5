@@ -24,7 +24,8 @@ std::string infx2pstfx(const std::string& inf) {
       continue;
     }
     if (std::isdigit(static_cast<unsigned char>(c))) {
-      while (i < inf.length() && std::isdigit(static_cast<unsigned char>(inf[i]))) {
+      while (i < inf.length() &&
+             std::isdigit(static_cast<unsigned char>(inf[i]))) {
         result += inf[i];
         ++i;
       }
