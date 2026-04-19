@@ -74,6 +74,7 @@ int eval(const std::string& post) {
       int b = values.pop();
       int a = values.pop();
       int result = 0;
+
       switch (token[0]) {
         case '+':
           result = a + b;
